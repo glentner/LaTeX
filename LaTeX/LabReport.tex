@@ -1,0 +1,41 @@
+% Copyright (c) Geoffrey Lentner 2015. All Rights Reserved
+% latex/Source/Main.tex
+
+\documentclass[11pt]{Styles/LabReport}
+\usepackage{Styles/apjfonts}
+
+\Subject{Physics}
+\CourseNumber{xxx}
+\SectionNumber{xx}
+\CourseName{Fundamentals of Physics}
+\Assignment{Lab x: Experimental Physics Laboratory}
+
+\Title{Example Latex Physics Lab Report}
+
+\Authors{James Kirk}{, John Smith, and Adam West}
+	{jkirk@nd.edu, jsmith@nd.edu, awest@nd.edu}
+
+\Institution{Department of Physics \& Astronomy,
+	University of Notre Dame, South Bend, IN 46556}
+
+\Abstract{\blindtext[2]}
+
+\MakeHeaders
+\begin{document}
+
+	\SetupLabReport
+
+	\begin{multicols}{2}[]
+
+		\input{Source/Introduction}
+		\input{Source/Methods}
+		\input{Source/DataAnalysis}
+		\input{Source/Discussion}
+		\input{Source/Conclusions}
+		\input{Source/Acknowledgements}
+
+	\end{multicols}
+
+	\References{Output/Main}
+
+\end{document}
